@@ -31,6 +31,9 @@ const data = prntConsole();
 //2 times the same msg is displayed
 
 console.log (data)
+//it says undefined because the function is not storing any value rather it has a instruction to do that is console.log msg
+
+
 
 
 
