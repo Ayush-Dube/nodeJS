@@ -35,5 +35,45 @@ console.log (data)
 
 
 
+function scopeChk(){
+    let a = "apple";
+    var b = "mango";
+    const c = "banana";
+
+    return [a,b,c]
+}
+
+const value1 = scopeChk();
+
+console.log(value1);
+console.log(value1[1]);
+console.log(value1[2]);
 
 
+//function scope
+
+const az = 'abc123';
+let by = 456;
+var cx = 'JavaScript';
+
+function scopeChk2(){
+    console.log(az)
+    console.log(by)
+    console.log(cx)
+}
+
+scopeChk2();  // all are accessible 
+
+//you will get error in all the 3
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+
+const ab = function fun1() {
+    console.log("hello");
+};
+
+ab(); // This works and will output: "hello"
+
+fun1(); // This will throw a ReferenceError: fun1 is not defined
